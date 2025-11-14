@@ -1,0 +1,20 @@
+{
+  "name": "queuectl",
+  "version": "1.0.0",
+  "description": "A CLI-based background job queue MVP built in Node.js",
+  "main": "src/cli.js",
+  "bin": {
+    "queuectl": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.1.2",
+    "uuid": "^13.0.0",
+    "yargs": "^17.7.2"
+  }
+}
