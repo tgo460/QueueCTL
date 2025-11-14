@@ -9,7 +9,7 @@ let db;
 function connect() {
   if (db) return db;
   const dbExists = fs.existsSync(DB_FILE);
-  db = new Database(DB_FILE, { verbose: console.log });
+  db = new Database(DB_FILE);
   db.pragma('journal_mode = WAL');
   if (!dbExists) {
     console.log('Database does not exist, running migrations...');
